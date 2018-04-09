@@ -15,7 +15,7 @@ const fatchdata = ()=>{
             var xhr = new ActiveXObject("Microsoft.XMLHTTP")
         }
 
-        xhr.open("GET", "http://openweathermap.org/data/2.5/weather?q="+sendvalue+"&appid=b6907d289e10d714a6e88b30761fae22", false)
+        xhr.open("GET", "https://openweathermap.org/data/2.5/weather?q="+sendvalue+"&appid=b6907d289e10d714a6e88b30761fae22", false)
 
         xhr.onreadystatechange = function(){
             if(xhr.status==200 && xhr.readyState==4){
